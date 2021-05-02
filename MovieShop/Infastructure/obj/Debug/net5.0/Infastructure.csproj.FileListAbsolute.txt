@@ -1,0 +1,15 @@
+E:\1_Study\9_CS\15_Antra\project\MovieShop\Infastructure\bin\Debug\net5.0\Infastructure.deps.json
+E:\1_Study\9_CS\15_Antra\project\MovieShop\Infastructure\bin\Debug\net5.0\Infastructure.runtimeconfig.json
+E:\1_Study\9_CS\15_Antra\project\MovieShop\Infastructure\bin\Debug\net5.0\Infastructure.runtimeconfig.dev.json
+E:\1_Study\9_CS\15_Antra\project\MovieShop\Infastructure\bin\Debug\net5.0\Infastructure.dll
+E:\1_Study\9_CS\15_Antra\project\MovieShop\Infastructure\bin\Debug\net5.0\ref\Infastructure.dll
+E:\1_Study\9_CS\15_Antra\project\MovieShop\Infastructure\bin\Debug\net5.0\Infastructure.pdb
+E:\1_Study\9_CS\15_Antra\project\MovieShop\Infastructure\obj\Debug\net5.0\Infastructure.csprojAssemblyReference.cache
+E:\1_Study\9_CS\15_Antra\project\MovieShop\Infastructure\obj\Debug\net5.0\Infastructure.GeneratedMSBuildEditorConfig.editorconfig
+E:\1_Study\9_CS\15_Antra\project\MovieShop\Infastructure\obj\Debug\net5.0\Infastructure.AssemblyInfoInputs.cache
+E:\1_Study\9_CS\15_Antra\project\MovieShop\Infastructure\obj\Debug\net5.0\Infastructure.AssemblyInfo.cs
+E:\1_Study\9_CS\15_Antra\project\MovieShop\Infastructure\obj\Debug\net5.0\Infastructure.csproj.CoreCompileInputs.cache
+E:\1_Study\9_CS\15_Antra\project\MovieShop\Infastructure\obj\Debug\net5.0\Infastructure.dll
+E:\1_Study\9_CS\15_Antra\project\MovieShop\Infastructure\obj\Debug\net5.0\ref\Infastructure.dll
+E:\1_Study\9_CS\15_Antra\project\MovieShop\Infastructure\obj\Debug\net5.0\Infastructure.pdb
+E:\1_Study\9_CS\15_Antra\project\MovieShop\Infastructure\obj\Debug\net5.0\Infastructure.genruntimeconfig.cache
