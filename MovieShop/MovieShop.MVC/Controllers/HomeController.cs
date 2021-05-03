@@ -6,24 +6,39 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using ApplicationCore.Models.Response;
+
+using Infrastructure.Services;
+using ApplicationCore.ServiceInterfaces;
 
 namespace MovieShop.MVC.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
+        //private readonly ILogger<HomeController> _logger;
+        //public HomeController(ILogger<HomeController> logger)
+        //{
+        //    _logger = logger;
+        //}
+        private readonly IMovieService _movieService;
+        public HomeController(IMovieService movieService)
         {
-            _logger = logger;
+            _movieService = movieService;
         }
 
         public IActionResult Index()
         {
-            return View();
+            var movies = _movieService.GetTop30RevenueMovie();
+            return View(movies);
+            
         }
 
         public IActionResult Privacy()
+        {
+            return View();
+        }
+
+        public IActionResult TopRatedMovies()
         {
             return View();
         }
