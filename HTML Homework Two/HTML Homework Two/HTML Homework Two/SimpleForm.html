@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>SimpleForm</title>
+    <style type="text/css" media="all">
+        #full {
+            text-align: left;
+            background-color: lightgrey;
+        }
+
+        table {
+            text-align: left;
+        }
+
+        td {
+            vertical-align: top;
+        }
+
+        #student {
+            background-color: blue;
+            color: white;
+        }
+
+        h2 {
+            color: blue;
+        }
+
+        a:link {
+            color: white;
+        }
+
+        #AreYouNew {
+            color: grey;
+        }
+
+        #Register {
+            color: blue;
+        }
+
+        #RegisterBtn {
+            border: 1px solid blue;
+            background-color: lightgrey;
+            color: blue;
+        }
+
+        #LoginBtn {
+            border: 1px solid yellow;
+            background: blue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="full">
+        <h2>Enter the system</h2>
+        <p>It is necessary to login in Your account in order to sign in for a course.</p>
+        <table>
+            <tr>
+                <td id="new">
+                    <form action="" method="get">
+                        <p id="AreYouNew">ARE YOU NEW? <span id="Register">REGISTER</span></p>
+                        <input type="text" name="UserName" placeholder="User Name"> <br>
+                        <input type="text" name="Email" placeholder="Email"> <br>
+                        <input type="password" name="Password" placeholder="Password"> <br>
+                        <input type="password" name="Password" placeholder="Confirm Password"> <br>
+                        <input type="submit" name="Register" id="RegisterBtn" value="Register"> <br>
+                    </form>
+                </td>
+                <td id="student">
+                    <form action="" method="get">
+                        <p>ALREADY A STUDENT?LOGIN</p>
+                        <input type="text" name="UserName" placeholder="User Name"> <br>
+                        <input type="password" name="Password" placeholder="Password"> <br>
+                        <input type="checkbox" name="Remember"> Rember me?
+                        <input type="submit" name="Login" id="LoginBtn" value="Login"> <br>
+                        <a id="forgot" href="www.google.com">Forgot Password</a>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+E:\1_Study\9_CS\15_Antra\HW\Lab2\Exercise5\bin\Debug\netcoreapp3.1\Exercise5.exe
+E:\1_Study\9_CS\15_Antra\HW\Lab2\Exercise5\bin\Debug\netcoreapp3.1\Exercise5.deps.json
+E:\1_Study\9_CS\15_Antra\HW\Lab2\Exercise5\bin\Debug\netcoreapp3.1\Exercise5.runtimeconfig.json
+E:\1_Study\9_CS\15_Antra\HW\Lab2\Exercise5\bin\Debug\netcoreapp3.1\Exercise5.runtimeconfig.dev.json
+E:\1_Study\9_CS\15_Antra\HW\Lab2\Exercise5\bin\Debug\netcoreapp3.1\Exercise5.dll
+E:\1_Study\9_CS\15_Antra\HW\Lab2\Exercise5\bin\Debug\netcoreapp3.1\Exercise5.pdb
+E:\1_Study\9_CS\15_Antra\HW\Lab2\Exercise5\obj\Debug\netcoreapp3.1\Exercise5.AssemblyInfoInputs.cache
+E:\1_Study\9_CS\15_Antra\HW\Lab2\Exercise5\obj\Debug\netcoreapp3.1\Exercise5.AssemblyInfo.cs
+E:\1_Study\9_CS\15_Antra\HW\Lab2\Exercise5\obj\Debug\netcoreapp3.1\Exercise5.csproj.CoreCompileInputs.cache
+E:\1_Study\9_CS\15_Antra\HW\Lab2\Exercise5\obj\Debug\netcoreapp3.1\Exercise5.dll
+E:\1_Study\9_CS\15_Antra\HW\Lab2\Exercise5\obj\Debug\netcoreapp3.1\Exercise5.pdb
+E:\1_Study\9_CS\15_Antra\HW\Lab2\Exercise5\obj\Debug\netcoreapp3.1\Exercise5.genruntimeconfig.cache

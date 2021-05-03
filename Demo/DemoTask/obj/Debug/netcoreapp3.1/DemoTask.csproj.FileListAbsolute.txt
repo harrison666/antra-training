@@ -1,0 +1,13 @@
+E:\1_Study\9_CS\15_Antra\HW\Demo\DemoTask\bin\Debug\netcoreapp3.1\DemoTask.exe
+E:\1_Study\9_CS\15_Antra\HW\Demo\DemoTask\bin\Debug\netcoreapp3.1\DemoTask.deps.json
+E:\1_Study\9_CS\15_Antra\HW\Demo\DemoTask\bin\Debug\netcoreapp3.1\DemoTask.runtimeconfig.json
+E:\1_Study\9_CS\15_Antra\HW\Demo\DemoTask\bin\Debug\netcoreapp3.1\DemoTask.runtimeconfig.dev.json
+E:\1_Study\9_CS\15_Antra\HW\Demo\DemoTask\bin\Debug\netcoreapp3.1\DemoTask.dll
+E:\1_Study\9_CS\15_Antra\HW\Demo\DemoTask\bin\Debug\netcoreapp3.1\DemoTask.pdb
+E:\1_Study\9_CS\15_Antra\HW\Demo\DemoTask\obj\Debug\netcoreapp3.1\DemoTask.csprojAssemblyReference.cache
+E:\1_Study\9_CS\15_Antra\HW\Demo\DemoTask\obj\Debug\netcoreapp3.1\DemoTask.AssemblyInfoInputs.cache
+E:\1_Study\9_CS\15_Antra\HW\Demo\DemoTask\obj\Debug\netcoreapp3.1\DemoTask.AssemblyInfo.cs
+E:\1_Study\9_CS\15_Antra\HW\Demo\DemoTask\obj\Debug\netcoreapp3.1\DemoTask.csproj.CoreCompileInputs.cache
+E:\1_Study\9_CS\15_Antra\HW\Demo\DemoTask\obj\Debug\netcoreapp3.1\DemoTask.dll
+E:\1_Study\9_CS\15_Antra\HW\Demo\DemoTask\obj\Debug\netcoreapp3.1\DemoTask.pdb
+E:\1_Study\9_CS\15_Antra\HW\Demo\DemoTask\obj\Debug\netcoreapp3.1\DemoTask.genruntimeconfig.cache

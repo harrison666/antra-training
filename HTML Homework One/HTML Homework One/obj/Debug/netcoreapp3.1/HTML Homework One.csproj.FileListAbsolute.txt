@@ -1,0 +1,37 @@
+E:\1_Study\9_CS\15_Antra\HW\HTML5 Tables\HTML Homework One\HTML Homework One\bin\Debug\netcoreapp3.1\appsettings.Development.json
+E:\1_Study\9_CS\15_Antra\HW\HTML5 Tables\HTML Homework One\HTML Homework One\bin\Debug\netcoreapp3.1\appsettings.json
+E:\1_Study\9_CS\15_Antra\HW\HTML5 Tables\HTML Homework One\HTML Homework One\bin\Debug\netcoreapp3.1\HTML Homework One.exe
+E:\1_Study\9_CS\15_Antra\HW\HTML5 Tables\HTML Homework One\HTML Homework One\bin\Debug\netcoreapp3.1\HTML Homework One.deps.json
+E:\1_Study\9_CS\15_Antra\HW\HTML5 Tables\HTML Homework One\HTML Homework One\bin\Debug\netcoreapp3.1\HTML Homework One.runtimeconfig.json
+E:\1_Study\9_CS\15_Antra\HW\HTML5 Tables\HTML Homework One\HTML Homework One\bin\Debug\netcoreapp3.1\HTML Homework One.runtimeconfig.dev.json
+E:\1_Study\9_CS\15_Antra\HW\HTML5 Tables\HTML Homework One\HTML Homework One\bin\Debug\netcoreapp3.1\HTML Homework One.dll
+E:\1_Study\9_CS\15_Antra\HW\HTML5 Tables\HTML Homework One\HTML Homework One\bin\Debug\netcoreapp3.1\HTML Homework One.pdb
+E:\1_Study\9_CS\15_Antra\HW\HTML5 Tables\HTML Homework One\HTML Homework One\bin\Debug\netcoreapp3.1\HTML Homework One.Views.dll
+E:\1_Study\9_CS\15_Antra\HW\HTML5 Tables\HTML Homework One\HTML Homework One\bin\Debug\netcoreapp3.1\HTML Homework One.Views.pdb
+E:\1_Study\9_CS\15_Antra\HW\HTML5 Tables\HTML Homework One\HTML Homework One\obj\Debug\netcoreapp3.1\HTML Homework One.csprojAssemblyReference.cache
+E:\1_Study\9_CS\15_Antra\HW\HTML5 Tables\HTML Homework One\HTML Homework One\obj\Debug\netcoreapp3.1\HTML Homework One.AssemblyInfoInputs.cache
+E:\1_Study\9_CS\15_Antra\HW\HTML5 Tables\HTML Homework One\HTML Homework One\obj\Debug\netcoreapp3.1\HTML Homework One.AssemblyInfo.cs
+E:\1_Study\9_CS\15_Antra\HW\HTML5 Tables\HTML Homework One\HTML Homework One\obj\Debug\netcoreapp3.1\HTML Homework One.csproj.CoreCompileInputs.cache
+E:\1_Study\9_CS\15_Antra\HW\HTML5 Tables\HTML Homework One\HTML Homework One\obj\Debug\netcoreapp3.1\HTML Homework One.MvcApplicationPartsAssemblyInfo.cache
+E:\1_Study\9_CS\15_Antra\HW\HTML5 Tables\HTML Homework One\HTML Homework One\obj\Debug\netcoreapp3.1\HTML Homework One.RazorAssemblyInfo.cache
+E:\1_Study\9_CS\15_Antra\HW\HTML5 Tables\HTML Homework One\HTML Homework One\obj\Debug\netcoreapp3.1\HTML Homework One.RazorAssemblyInfo.cs
+E:\1_Study\9_CS\15_Antra\HW\HTML5 Tables\HTML Homework One\HTML Homework One\obj\Debug\netcoreapp3.1\staticwebassets\HTML Homework One.StaticWebAssets.Manifest.cache
+E:\1_Study\9_CS\15_Antra\HW\HTML5 Tables\HTML Homework One\HTML Homework One\obj\Debug\netcoreapp3.1\staticwebassets\HTML Homework One.StaticWebAssets.xml
+E:\1_Study\9_CS\15_Antra\HW\HTML5 Tables\HTML Homework One\HTML Homework One\obj\Debug\netcoreapp3.1\scopedcss\bundle\HTML Homework One.styles.css
+E:\1_Study\9_CS\15_Antra\HW\HTML5 Tables\HTML Homework One\HTML Homework One\obj\Debug\netcoreapp3.1\HTML Homework One.TagHelpers.input.cache
+E:\1_Study\9_CS\15_Antra\HW\HTML5 Tables\HTML Homework One\HTML Homework One\obj\Debug\netcoreapp3.1\HTML Homework One.TagHelpers.output.cache
+E:\1_Study\9_CS\15_Antra\HW\HTML5 Tables\HTML Homework One\HTML Homework One\obj\Debug\netcoreapp3.1\HTML Homework One.RazorCoreGenerate.cache
+E:\1_Study\9_CS\15_Antra\HW\HTML5 Tables\HTML Homework One\HTML Homework One\obj\Debug\netcoreapp3.1\Razor\Pages\Error.cshtml.g.cs
+E:\1_Study\9_CS\15_Antra\HW\HTML5 Tables\HTML Homework One\HTML Homework One\obj\Debug\netcoreapp3.1\Razor\Pages\Index.cshtml.g.cs
+E:\1_Study\9_CS\15_Antra\HW\HTML5 Tables\HTML Homework One\HTML Homework One\obj\Debug\netcoreapp3.1\Razor\Pages\Privacy.cshtml.g.cs
+E:\1_Study\9_CS\15_Antra\HW\HTML5 Tables\HTML Homework One\HTML Homework One\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_Layout.cshtml.g.cs
+E:\1_Study\9_CS\15_Antra\HW\HTML5 Tables\HTML Homework One\HTML Homework One\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
+E:\1_Study\9_CS\15_Antra\HW\HTML5 Tables\HTML Homework One\HTML Homework One\obj\Debug\netcoreapp3.1\Razor\Pages\_ViewImports.cshtml.g.cs
+E:\1_Study\9_CS\15_Antra\HW\HTML5 Tables\HTML Homework One\HTML Homework One\obj\Debug\netcoreapp3.1\Razor\Pages\_ViewStart.cshtml.g.cs
+E:\1_Study\9_CS\15_Antra\HW\HTML5 Tables\HTML Homework One\HTML Homework One\obj\Debug\netcoreapp3.1\HTML Homework One.RazorTargetAssemblyInfo.cache
+E:\1_Study\9_CS\15_Antra\HW\HTML5 Tables\HTML Homework One\HTML Homework One\obj\Debug\netcoreapp3.1\HTML Homework One.RazorTargetAssemblyInfo.cs
+E:\1_Study\9_CS\15_Antra\HW\HTML5 Tables\HTML Homework One\HTML Homework One\obj\Debug\netcoreapp3.1\HTML Homework One.Views.pdb
+E:\1_Study\9_CS\15_Antra\HW\HTML5 Tables\HTML Homework One\HTML Homework One\obj\Debug\netcoreapp3.1\HTML Homework One.dll
+E:\1_Study\9_CS\15_Antra\HW\HTML5 Tables\HTML Homework One\HTML Homework One\obj\Debug\netcoreapp3.1\HTML Homework One.pdb
+E:\1_Study\9_CS\15_Antra\HW\HTML5 Tables\HTML Homework One\HTML Homework One\obj\Debug\netcoreapp3.1\HTML Homework One.genruntimeconfig.cache
+E:\1_Study\9_CS\15_Antra\HW\HTML5 Tables\HTML Homework One\HTML Homework One\obj\Debug\netcoreapp3.1\HTML Homework One.csproj.CopyComplete

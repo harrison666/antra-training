@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>SignUp</title>
+    <style type="text/css" media="all">
+        form {
+            text-align: center;
+        }
+
+        .short {
+            margin: 10px 0px;
+            width: 25%;
+            height: 20px;
+        }
+
+        .long {
+            margin: 10px 0px;
+            width: 52%;
+            height: 20px;
+        }
+
+        .container {
+            margin: 10px 20%;
+        }
+
+        input[type="submit" i] {
+            width: 25%;
+            height: 25px;
+            color: white;
+            background-color: blue;
+            border: 0;
+            border-radius: 5px;
+        }
+
+        input[type="button" i] {
+            width: 25%;
+            height: 25px;
+            color: white;
+            background-color: green;
+            border: 0;
+            border-radius: 5px;
+        }
+
+        #register {
+            padding: 2px 5px;
+            color: white;
+            background-color: blue;
+            border: 0;
+            border-radius: 5px;
+        }
+
+        table {
+            border: 0px;
+        }
+
+        td {
+            width: 30%;
+            margin: 0px 20%;
+        }
+
+        #term {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="get">
+        <h2>Sign Up</h2>
+        <div class="container">
+            <input type="text" class="short" placeholder="First Name" />
+            <input type="text" class="short" placeholder="Last Name" /> <br />
+            <input type="text" class="long" id="mobile" placeholder="Mobile No." /> <br />
+            <input type="text" class="long" id="email" placeholder="Email Address" /> <br />
+            <input type="password" class="short" placeholder="Password" />
+            <input type="password" class="short" placeholder="Confirm Password" /> <br />
+        </div>
+        <div class="container">
+            <table>
+                <tr>
+                    <td>
+                        <input type="checkbox" /> <b>I Agree</b>
+                    </td>
+                    <td id="term">
+                        By clicking <span id="register">Register</span>, you agree to the <a href="www.google.com">Terms and Conditions</a> set out by this site, including our Cookie Use.
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="container">
+            <input type="submit" value="Register" />
+            <input type="button" value="Sign In" />
+        </div>
+    </form>
+
+</body>
+</html>

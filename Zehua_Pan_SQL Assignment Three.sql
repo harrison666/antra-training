@@ -83,17 +83,17 @@ WITH CustomerProducts
 AS
 (
 SELECT o.OrderID, o.CustomerID, od.ProductID
-FROM dbo.Orders o LEFT JOIN dbo.[Order Details] od
+FROM dbo.Orders o JOIN dbo.[Order Details] od
 ON o.OrderID = od.OrderID
 )
-SELECT c.City, COUNT(p.ProductID) AS TotalQuantity
-FROM dbo.Customers c LEFT JOIN CustomerProducts p
+SELECT DISTINCT c.City
+FROM dbo.Customers c JOIN CustomerProducts p
 ON c.CustomerID = p.CustomerID
-GROUP BY c.City
-HAVING COUNT(p.ProductID) > 2
+GROUP BY c.City,ProductID
+HAVING COUNT(*) >= 2
 
 ----- 7 -----
-SELECT c.CustomerID, c.CompanyName, c.City, o.ShipCity
+SELECT DISTINCT c.CustomerID
 FROM dbo.Customers c LEFT JOIN dbo.Orders o
 ON c.CustomerID = o.CustomerID
 WHERE c.City != o.ShipCity
@@ -176,7 +176,7 @@ As
 SELECT TOP 1 e.City, COUNT(o.OrderID) AS OrderCount
 FROM dbo.Employees e RIGHT JOIN dbo.Orders o
 ON e.EmployeeID = o.EmployeeID
-GROUP BY e.City
+GROUP BY e.EmployeeID, e.City
 ORDER BY OrderCount DESC
 )
 SELECT * FROM Top1Order o INNER JOIN Top1Quantity q
