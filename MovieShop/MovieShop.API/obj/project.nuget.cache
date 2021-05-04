@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kc5SVUoepjQsCZJL1c+7vCcvClpBpBU9YCAdo1I9gkVGDqDrWOWcXLubOdNHIWxoPI5uwuXw6O7Z2cg9yMTtmw==",
+  "dgSpecHash": "BZtysqwrAovVpTAI0AKsaWmwsn7mz/wTX0OK/NBsA8GuDpuB3+sYlXbdj4qQeqzVai7m+XIejT2Xwj72paSpyQ==",
   "success": true,
-  "projectFilePath": "E:\\1_Study\\9_CS\\15_Antra\\project\\MovieShop\\MovieShop.API\\MovieShop.API.csproj",
+  "projectFilePath": "E:\\1_Study\\9_CS\\15_Antra\\HW\\MovieShop\\MovieShop.API\\MovieShop.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Harrison\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Harrison\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

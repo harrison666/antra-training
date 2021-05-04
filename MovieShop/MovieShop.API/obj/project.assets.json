@@ -5985,11 +5985,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\1_Study\\9_CS\\15_Antra\\project\\MovieShop\\MovieShop.API\\MovieShop.API.csproj",
+      "projectUniqueName": "E:\\1_Study\\9_CS\\15_Antra\\HW\\MovieShop\\MovieShop.API\\MovieShop.API.csproj",
       "projectName": "MovieShop.API",
-      "projectPath": "E:\\1_Study\\9_CS\\15_Antra\\project\\MovieShop\\MovieShop.API\\MovieShop.API.csproj",
+      "projectPath": "E:\\1_Study\\9_CS\\15_Antra\\HW\\MovieShop\\MovieShop.API\\MovieShop.API.csproj",
       "packagesPath": "C:\\Users\\Harrison\\.nuget\\packages\\",
-      "outputPath": "E:\\1_Study\\9_CS\\15_Antra\\project\\MovieShop\\MovieShop.API\\obj\\",
+      "outputPath": "E:\\1_Study\\9_CS\\15_Antra\\HW\\MovieShop\\MovieShop.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Harrison\\AppData\\Roaming\\NuGet\\NuGet.Config",

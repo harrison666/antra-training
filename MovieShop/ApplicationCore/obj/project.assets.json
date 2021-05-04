@@ -5794,7 +5794,8 @@
       "Microsoft.EntityFrameworkCore >= 5.0.5",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.5",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.5",
-      "Microsoft.EntityFrameworkCore.Tools >= 5.0.5"
+      "Microsoft.EntityFrameworkCore.Tools >= 5.0.5",
+      "System.ComponentModel.Annotations >= 5.0.0"
     ]
   },
   "packageFolders": {
@@ -5803,11 +5804,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\1_Study\\9_CS\\15_Antra\\project\\MovieShop\\ApplicationCore\\ApplicationCore.csproj",
+      "projectUniqueName": "E:\\1_Study\\9_CS\\15_Antra\\HW\\MovieShop\\ApplicationCore\\ApplicationCore.csproj",
       "projectName": "ApplicationCore",
-      "projectPath": "E:\\1_Study\\9_CS\\15_Antra\\project\\MovieShop\\ApplicationCore\\ApplicationCore.csproj",
+      "projectPath": "E:\\1_Study\\9_CS\\15_Antra\\HW\\MovieShop\\ApplicationCore\\ApplicationCore.csproj",
       "packagesPath": "C:\\Users\\Harrison\\.nuget\\packages\\",
-      "outputPath": "E:\\1_Study\\9_CS\\15_Antra\\project\\MovieShop\\ApplicationCore\\obj\\",
+      "outputPath": "E:\\1_Study\\9_CS\\15_Antra\\HW\\MovieShop\\ApplicationCore\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Harrison\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5855,6 +5856,10 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[5.0.5, )"
+          },
+          "System.ComponentModel.Annotations": {
+            "target": "Package",
+            "version": "[5.0.0, )"
           }
         },
         "imports": [

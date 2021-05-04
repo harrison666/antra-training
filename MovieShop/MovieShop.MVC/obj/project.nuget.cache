@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rd6DTZP67mALfetaDQTsXA8OSdthrvOeH8KwiA6dEzI7X0vndhQ6q8bvdbIRVi3hRAuELtjptlz4JMcwFexeMQ==",
+  "dgSpecHash": "wEJm5gjIBuonUkIkc5bTLkuiH67etdfMc/oUZze6JcCEbgBGGGGFqzvf3DE6CBHmAuJPFeJJbNEFjqe2C8EVFw==",
   "success": true,
-  "projectFilePath": "E:\\1_Study\\9_CS\\15_Antra\\project\\MovieShop\\MovieShop.MVC\\MovieShop.MVC.csproj",
+  "projectFilePath": "E:\\1_Study\\9_CS\\15_Antra\\HW\\MovieShop\\MovieShop.MVC\\MovieShop.MVC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Harrison\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Harrison\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",

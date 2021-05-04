@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\1_Study\\9_CS\\15_Antra\\project\\MovieShop\\MovieShop.MVC\\MovieShop.MVC.csproj": {}
+    "E:\\1_Study\\9_CS\\15_Antra\\HW\\MovieShop\\MovieShop.MVC\\MovieShop.MVC.csproj": {}
   },
   "projects": {
-    "E:\\1_Study\\9_CS\\15_Antra\\project\\MovieShop\\ApplicationCore\\ApplicationCore.csproj": {
+    "E:\\1_Study\\9_CS\\15_Antra\\HW\\MovieShop\\ApplicationCore\\ApplicationCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\1_Study\\9_CS\\15_Antra\\project\\MovieShop\\ApplicationCore\\ApplicationCore.csproj",
+        "projectUniqueName": "E:\\1_Study\\9_CS\\15_Antra\\HW\\MovieShop\\ApplicationCore\\ApplicationCore.csproj",
         "projectName": "ApplicationCore",
-        "projectPath": "E:\\1_Study\\9_CS\\15_Antra\\project\\MovieShop\\ApplicationCore\\ApplicationCore.csproj",
+        "projectPath": "E:\\1_Study\\9_CS\\15_Antra\\HW\\MovieShop\\ApplicationCore\\ApplicationCore.csproj",
         "packagesPath": "C:\\Users\\Harrison\\.nuget\\packages\\",
-        "outputPath": "E:\\1_Study\\9_CS\\15_Antra\\project\\MovieShop\\ApplicationCore\\obj\\",
+        "outputPath": "E:\\1_Study\\9_CS\\15_Antra\\HW\\MovieShop\\ApplicationCore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Harrison\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -59,6 +59,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[5.0.5, )"
+            },
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[5.0.0, )"
             }
           },
           "imports": [
@@ -80,14 +84,14 @@
         }
       }
     },
-    "E:\\1_Study\\9_CS\\15_Antra\\project\\MovieShop\\Infastructure\\Infrastructure.csproj": {
+    "E:\\1_Study\\9_CS\\15_Antra\\HW\\MovieShop\\Infastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\1_Study\\9_CS\\15_Antra\\project\\MovieShop\\Infastructure\\Infrastructure.csproj",
+        "projectUniqueName": "E:\\1_Study\\9_CS\\15_Antra\\HW\\MovieShop\\Infastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "E:\\1_Study\\9_CS\\15_Antra\\project\\MovieShop\\Infastructure\\Infrastructure.csproj",
+        "projectPath": "E:\\1_Study\\9_CS\\15_Antra\\HW\\MovieShop\\Infastructure\\Infrastructure.csproj",
         "packagesPath": "C:\\Users\\Harrison\\.nuget\\packages\\",
-        "outputPath": "E:\\1_Study\\9_CS\\15_Antra\\project\\MovieShop\\Infastructure\\obj\\",
+        "outputPath": "E:\\1_Study\\9_CS\\15_Antra\\HW\\MovieShop\\Infastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Harrison\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -104,8 +108,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "E:\\1_Study\\9_CS\\15_Antra\\project\\MovieShop\\ApplicationCore\\ApplicationCore.csproj": {
-                "projectPath": "E:\\1_Study\\9_CS\\15_Antra\\project\\MovieShop\\ApplicationCore\\ApplicationCore.csproj"
+              "E:\\1_Study\\9_CS\\15_Antra\\HW\\MovieShop\\ApplicationCore\\ApplicationCore.csproj": {
+                "projectPath": "E:\\1_Study\\9_CS\\15_Antra\\HW\\MovieShop\\ApplicationCore\\ApplicationCore.csproj"
               }
             }
           }
@@ -160,14 +164,14 @@
         }
       }
     },
-    "E:\\1_Study\\9_CS\\15_Antra\\project\\MovieShop\\MovieShop.MVC\\MovieShop.MVC.csproj": {
+    "E:\\1_Study\\9_CS\\15_Antra\\HW\\MovieShop\\MovieShop.MVC\\MovieShop.MVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\1_Study\\9_CS\\15_Antra\\project\\MovieShop\\MovieShop.MVC\\MovieShop.MVC.csproj",
+        "projectUniqueName": "E:\\1_Study\\9_CS\\15_Antra\\HW\\MovieShop\\MovieShop.MVC\\MovieShop.MVC.csproj",
         "projectName": "MovieShop.MVC",
-        "projectPath": "E:\\1_Study\\9_CS\\15_Antra\\project\\MovieShop\\MovieShop.MVC\\MovieShop.MVC.csproj",
+        "projectPath": "E:\\1_Study\\9_CS\\15_Antra\\HW\\MovieShop\\MovieShop.MVC\\MovieShop.MVC.csproj",
         "packagesPath": "C:\\Users\\Harrison\\.nuget\\packages\\",
-        "outputPath": "E:\\1_Study\\9_CS\\15_Antra\\project\\MovieShop\\MovieShop.MVC\\obj\\",
+        "outputPath": "E:\\1_Study\\9_CS\\15_Antra\\HW\\MovieShop\\MovieShop.MVC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Harrison\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -184,11 +188,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "E:\\1_Study\\9_CS\\15_Antra\\project\\MovieShop\\ApplicationCore\\ApplicationCore.csproj": {
-                "projectPath": "E:\\1_Study\\9_CS\\15_Antra\\project\\MovieShop\\ApplicationCore\\ApplicationCore.csproj"
+              "E:\\1_Study\\9_CS\\15_Antra\\HW\\MovieShop\\ApplicationCore\\ApplicationCore.csproj": {
+                "projectPath": "E:\\1_Study\\9_CS\\15_Antra\\HW\\MovieShop\\ApplicationCore\\ApplicationCore.csproj"
               },
-              "E:\\1_Study\\9_CS\\15_Antra\\project\\MovieShop\\Infastructure\\Infrastructure.csproj": {
-                "projectPath": "E:\\1_Study\\9_CS\\15_Antra\\project\\MovieShop\\Infastructure\\Infrastructure.csproj"
+              "E:\\1_Study\\9_CS\\15_Antra\\HW\\MovieShop\\Infastructure\\Infrastructure.csproj": {
+                "projectPath": "E:\\1_Study\\9_CS\\15_Antra\\HW\\MovieShop\\Infastructure\\Infrastructure.csproj"
               }
             }
           }

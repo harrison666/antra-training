@@ -1525,7 +1525,8 @@
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "5.0.5",
-          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.5"
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.5",
+          "System.ComponentModel.Annotations": "5.0.0"
         },
         "compile": {
           "bin/placeholder/ApplicationCore.dll": {}
@@ -5823,11 +5824,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\1_Study\\9_CS\\15_Antra\\project\\MovieShop\\Infastructure\\Infrastructure.csproj",
+      "projectUniqueName": "E:\\1_Study\\9_CS\\15_Antra\\HW\\MovieShop\\Infastructure\\Infrastructure.csproj",
       "projectName": "Infrastructure",
-      "projectPath": "E:\\1_Study\\9_CS\\15_Antra\\project\\MovieShop\\Infastructure\\Infrastructure.csproj",
+      "projectPath": "E:\\1_Study\\9_CS\\15_Antra\\HW\\MovieShop\\Infastructure\\Infrastructure.csproj",
       "packagesPath": "C:\\Users\\Harrison\\.nuget\\packages\\",
-      "outputPath": "E:\\1_Study\\9_CS\\15_Antra\\project\\MovieShop\\Infastructure\\obj\\",
+      "outputPath": "E:\\1_Study\\9_CS\\15_Antra\\HW\\MovieShop\\Infastructure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Harrison\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5844,8 +5845,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "E:\\1_Study\\9_CS\\15_Antra\\project\\MovieShop\\ApplicationCore\\ApplicationCore.csproj": {
-              "projectPath": "E:\\1_Study\\9_CS\\15_Antra\\project\\MovieShop\\ApplicationCore\\ApplicationCore.csproj"
+            "E:\\1_Study\\9_CS\\15_Antra\\HW\\MovieShop\\ApplicationCore\\ApplicationCore.csproj": {
+              "projectPath": "E:\\1_Study\\9_CS\\15_Antra\\HW\\MovieShop\\ApplicationCore\\ApplicationCore.csproj"
             }
           }
         }

@@ -2016,7 +2016,8 @@
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "5.0.5",
-          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.5"
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.5",
+          "System.ComponentModel.Annotations": "5.0.0"
         },
         "compile": {
           "bin/placeholder/ApplicationCore.dll": {}
@@ -7196,11 +7197,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\1_Study\\9_CS\\15_Antra\\project\\MovieShop\\MovieShop.MVC\\MovieShop.MVC.csproj",
+      "projectUniqueName": "E:\\1_Study\\9_CS\\15_Antra\\HW\\MovieShop\\MovieShop.MVC\\MovieShop.MVC.csproj",
       "projectName": "MovieShop.MVC",
-      "projectPath": "E:\\1_Study\\9_CS\\15_Antra\\project\\MovieShop\\MovieShop.MVC\\MovieShop.MVC.csproj",
+      "projectPath": "E:\\1_Study\\9_CS\\15_Antra\\HW\\MovieShop\\MovieShop.MVC\\MovieShop.MVC.csproj",
       "packagesPath": "C:\\Users\\Harrison\\.nuget\\packages\\",
-      "outputPath": "E:\\1_Study\\9_CS\\15_Antra\\project\\MovieShop\\MovieShop.MVC\\obj\\",
+      "outputPath": "E:\\1_Study\\9_CS\\15_Antra\\HW\\MovieShop\\MovieShop.MVC\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Harrison\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -7217,11 +7218,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "E:\\1_Study\\9_CS\\15_Antra\\project\\MovieShop\\ApplicationCore\\ApplicationCore.csproj": {
-              "projectPath": "E:\\1_Study\\9_CS\\15_Antra\\project\\MovieShop\\ApplicationCore\\ApplicationCore.csproj"
+            "E:\\1_Study\\9_CS\\15_Antra\\HW\\MovieShop\\ApplicationCore\\ApplicationCore.csproj": {
+              "projectPath": "E:\\1_Study\\9_CS\\15_Antra\\HW\\MovieShop\\ApplicationCore\\ApplicationCore.csproj"
             },
-            "E:\\1_Study\\9_CS\\15_Antra\\project\\MovieShop\\Infastructure\\Infrastructure.csproj": {
-              "projectPath": "E:\\1_Study\\9_CS\\15_Antra\\project\\MovieShop\\Infastructure\\Infrastructure.csproj"
+            "E:\\1_Study\\9_CS\\15_Antra\\HW\\MovieShop\\Infastructure\\Infrastructure.csproj": {
+              "projectPath": "E:\\1_Study\\9_CS\\15_Antra\\HW\\MovieShop\\Infastructure\\Infrastructure.csproj"
             }
           }
         }
