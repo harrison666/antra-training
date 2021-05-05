@@ -18,7 +18,5 @@ namespace ApplicationCore.Entities
         public string ProfilePath { get; set; }
 
         public ICollection<MovieCrew> MovieCrews { get; set; }
-        
-        //public ICollection<Crew> Crews { get; set; }
     }
 }

@@ -50,21 +50,10 @@ namespace Infastructure.Data
                     m => m.HasOne<Genre>().WithMany().HasForeignKey("GenreId"),
                     g => g.HasOne<Movie>().WithMany().HasForeignKey("MovieId"));
 
-            //modelBuilder.Entity<Movie>().HasMany(m => m.Crews).WithMany(c => c.Movies)
-            //    .UsingEntity<Dictionary<string, object>>("MovieCrew",
-            //        c => c.HasOne<Crew>().WithMany().HasForeignKey("CrewId"),
-            //        g => g.HasOne<Movie>().WithMany().HasForeignKey("MovieId"));
-
-            //modelBuilder.Entity<Movie>().HasMany(m => m.Casts).WithMany(c => c.Movies)
-            //    .UsingEntity<Dictionary<string, object>>("MovieCast",
-            //        c => c.HasOne<Cast>().WithMany().HasForeignKey("CastId"),
-            //        g => g.HasOne<Movie>().WithMany().HasForeignKey("MovieId"));
-
             modelBuilder.Entity<User>().HasMany(u => u.Roles).WithMany(r => r.Users)
                 .UsingEntity<Dictionary<string, object>>("UserRole",
                     u => u.HasOne<Role>().WithMany().HasForeignKey("RoleId"),
                     r => r.HasOne<User>().WithMany().HasForeignKey("UserId"));
-
         }
 
         private void ConfigureTrailer(EntityTypeBuilder<Trailer> builder)

@@ -4,41 +4,121 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ApplicationCore.Models.Response;
+using ApplicationCore.RepositoryInterfaces;
 using ApplicationCore.ServiceInterfaces;
 
 namespace Infrastructure.Services
 {
 
-    public class MovieService: IMovieService
+    public class MovieService : IMovieService
     {
-        public List<MovieResponseModel> GetTop30RevenueMovie()
+        private readonly IMovieRepository _movieRepository;
+
+        public MovieService(IMovieRepository movieRepository)
         {
-            var movies = new List<MovieResponseModel>
+            _movieRepository = movieRepository;
+        }
+
+        public async Task<List<MovieResponseModel>> GetTop30RevenueMovies()
+        {
+            var movies = await _movieRepository.GetTop30HighestRevenueMovies();
+
+            var topMovies = new List<MovieResponseModel>();
+            foreach (var movie in movies)
             {
-                new() {Id = 1, Title = "Avengers: Infinity War", Budget = 1200000},
-                new() {Id = 2, Title = "Avatar", Budget = 1200000},
-                new() {Id = 3, Title = "Star Wars: The Force Awakens", Budget = 1200000},
-                new() {Id = 4, Title = "Titanic", Budget = 1200000},
-                new() {Id = 5, Title = "Inception", Budget = 1200000},
-                new() {Id = 6, Title = "Avengers: Age of Ultron", Budget = 1200000},
-                new() {Id = 7, Title = "Interstellar", Budget = 1200000},
-                new() {Id = 8, Title = "Fight Club", Budget = 1200000},
-                new()
+                topMovies.Add(new MovieResponseModel
                 {
-                    Id = 9, Title = "The Lord of the Rings: The Fellowship of the Ring", Budget = 1200000
-                },
-                new() {Id = 10, Title = "The Dark Knight", Budget = 1200000},
-                new() {Id = 11, Title = "The Hunger Games", Budget = 1200000},
-                new() {Id = 12, Title = "Django Unchained", Budget = 1200000},
-                new()
+                    Id = movie.Id,
+                    Budget = movie.Budget,
+                    Title = movie.Title
+                });
+            }
+
+            return topMovies;
+        }
+
+        public async Task<List<MovieResponseModel>> GetAllMovies()
+        {
+            var movies = await _movieRepository.ListAllAsync();
+
+            var allMovies = new List<MovieResponseModel>();
+            foreach (var movie in movies)
+            {
+                allMovies.Add(new MovieResponseModel
                 {
-                    Id = 13, Title = "The Lord of the Rings: The Return of the King", Budget = 1200000
-                },
-                new() {Id = 14, Title = "Harry Potter and the Philosopher's Stone", Budget = 1200000},
-                new() {Id = 15, Title = "Iron Man", Budget = 1200000},
-                new() {Id = 16, Title = "Furious 7", Budget = 1200000}
+                    Id = movie.Id,
+                    Title = movie.Title
+                });
+            }
+
+            return allMovies;
+        }
+
+        public async Task<List<MovieResponseModel>> GetTop30RatedMovies()
+        {
+            var movies = await _movieRepository.GetTop30HighestRatedMovies();
+
+            var topMovies = new List<MovieResponseModel>();
+            foreach (var movie in movies)
+            {
+                topMovies.Add(new MovieResponseModel
+                {
+                    Id = movie.Id,
+                    Rating = movie.Rating,
+                    Title = movie.Title
+                });
+            }
+
+            return topMovies;
+        }
+
+
+        public async Task<MovieResponseModel> GetMovieById(int id)
+        {
+            var movie = await _movieRepository.GetByIdAsync(id);
+
+            var oneMovie = new MovieResponseModel()
+            {
+                Id = movie.Id,
+                Title = movie.Title
             };
-            return movies;
+            return oneMovie;
+        }
+
+        public async Task<List<MovieResponseModel>> GetMoviesByGenre(int genreId)
+        {
+            var movies = await _movieRepository.GetMoviesByGenreId(genreId);
+
+            var selectedMovies = new List<MovieResponseModel>();
+            foreach (var movie in movies)
+            {
+                selectedMovies.Add(new MovieResponseModel
+                {
+                    Id = movie.Id,
+                    Title = movie.Title
+                });
+            }
+
+            return selectedMovies;
+        }
+
+        public async Task<List<ReviewResponseModel>> GetReviewsForMovie(int id)
+        {
+            var reviews = await _movieRepository.GetReviewsByMovieId(id);
+
+            var selectedReviews = new List<ReviewResponseModel>();
+            foreach (var review in reviews)
+            {
+                selectedReviews.Add(new ReviewResponseModel
+                {
+                    MovieId = review.MovieId,
+                    UserId = review.UserId,
+                    Rating = review.Rating,
+                    ReviewText = review.ReviewText
+                });
+            }
+
+            return selectedReviews;
         }
     }
 }
