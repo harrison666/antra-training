@@ -57,7 +57,7 @@ namespace MovieShop.MVC.Controllers
             //}
 
             ////var movies = _movieService.GetTop30RevenueMovie();
-            var topMovies = await _movieService.GetTop30RatedMovies();
+            var topMovies = await _movieService.GetTop30RevenueMovies();
             return View(topMovies);
 
         }
