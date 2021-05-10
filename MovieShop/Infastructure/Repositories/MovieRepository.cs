@@ -1,4 +1,5 @@
 ﻿using ApplicationCore.Entities;
+using ApplicationCore.Exceptions;
 using ApplicationCore.Models.Response;
 using ApplicationCore.RepositoryInterfaces;
 using ApplicationCore.ServiceInterfaces;
@@ -32,7 +33,18 @@ namespace Infrastructure.Repositories
 
         public override async Task<Movie> GetByIdAsync(int id)
         {
-            var movie = await _dbContext.Movies.FirstOrDefaultAsync(m => m.Id == id);
+            var movie = await _dbContext.Movies.Include(m => m.MovieCasts).ThenInclude(m => m.Cast)
+                .Include(m => m.Genres)
+                .FirstOrDefaultAsync(m => m.Id == id);
+            if (movie == null)
+            {
+                throw new NotFoundException("Movie Not found");
+            }
+
+            var movieRating = await _dbContext.Reviews.Where(r => r.MovieId == id).DefaultIfEmpty()
+                .AverageAsync(r => r == null ? 0 : r.Rating);
+            if (movieRating > 0) movie.Rating = movieRating;
+
             return movie;
         }
 
@@ -57,14 +69,15 @@ namespace Infrastructure.Repositories
             var totalReviewCountByMovie =
                 await _dbContext.Movies.Where(m => m.Id == id).SelectMany(m => m.Reviews)
                     .CountAsync();
-
+            Console.WriteLine(totalReviewCountByMovie);
             if (totalReviewCountByMovie == 0)
             {
-                throw new Exception("NO Movies found for this genre");
+                throw new Exception("NO Reviews found for this movie");
             }
             var reviews = await _dbContext.Movies.Where(m => m.Id == id).SelectMany(m => m.Reviews).ToListAsync();
             return reviews;
         }
+
 
         //First()
         //FirstOrDefault()

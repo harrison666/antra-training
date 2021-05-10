@@ -13,7 +13,8 @@ namespace ApplicationCore.Models.Response
         public int Id { get; set; }
         public string Title { get; set; }
         public decimal? Budget { get; set; }
-        
+        public string PosterUrl { get; set; }
+
         public decimal? Rating { get; set; }
 
         public Genre Genres { get; set; }
