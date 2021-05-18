@@ -8,9 +8,7 @@ namespace ApplicationCore.Models.Response
 {
     public class ReviewResponseModel
     {
-        public int MovieId { get; set; }
         public int UserId { get; set; }
-        public decimal? Rating { get; set; }
-        public string ReviewText { get; set; }
+        public List<ReviewMovieResponseModel> MovieReviews { get; set; }
     }
 }

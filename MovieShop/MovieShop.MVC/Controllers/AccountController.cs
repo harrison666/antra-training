@@ -95,6 +95,8 @@ namespace MovieShop.MVC.Controllers
         public async Task<IActionResult> EditProfile()
         {
             // call the database and get the user information and fill that in textboxes so that user can edit and save info
+            //var id = Convert.ToInt32(HttpContext?.User.FindFirst(ClaimTypes.NameIdentifier)?.Value);
+            //var profile = await _userService.GetProfile(id);
             return View();
         }
 
@@ -102,7 +104,9 @@ namespace MovieShop.MVC.Controllers
         public async Task<IActionResult> EditProfile(UserRequestModel userRequestModel)
         {
             // call the user service and map the UserRequestModel data into User entity and call the repository
-            return View();
+            var id = Convert.ToInt32(HttpContext?.User.FindFirst(ClaimTypes.NameIdentifier)?.Value);
+            var profile = await _userService.UpdateProfile(id, userRequestModel);
+            return RedirectToAction("Profile");
         }
     }
 }

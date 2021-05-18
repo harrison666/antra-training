@@ -32,23 +32,38 @@ namespace MovieShop.MVC
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //services.AddScoped<MovieShopHeaderFilter>();
             services.AddControllersWithViews(
-                options => options.Filters.Add(typeof(MovieShopHeaderFilter))
+                //options => options.Filters.Add(typeof(MovieShopHeaderFilter))
                 );
 
             services.AddDbContext<MovieShopDbContext>(options => options.UseSqlServer(
                 Configuration.GetConnectionString("MovieShopDbConnection")
                 ));
 
-            //Injecting MovieService for IMovieService
+
             services.AddScoped<IMovieService, MovieService>();
             services.AddScoped<IMovieRepository, MovieRepository>();
+
             services.AddScoped<IGenreService, GenreService>();
             services.AddScoped<IAsyncRepository<Genre>, EfRepository<Genre>>();
+            services.AddScoped<IAsyncRepository<Favorite>, EfRepository<Favorite>>();
+            services.AddScoped<IAsyncRepository<Review>, EfRepository<Review>>();
+            services.AddScoped<IAsyncRepository<Purchase>, EfRepository<Purchase>>();
+            services.AddScoped<IPurchaseRepository, PurchaseRepository>();
+
+            services.AddScoped<ICastService, CastService>();
+            services.AddScoped<IAsyncRepository<Cast>, EfRepository<Cast>>();
+
+
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IUserRepository, UserRepository>();
+
             services.AddScoped<ICurrentUserService, CurrentUserService>();
-            //services.AddScoped<MovieShopHeaderFilter>();
+
+
+
+            services.AddHttpContextAccessor();
 
             services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
                 .AddCookie(options =>
@@ -59,7 +74,7 @@ namespace MovieShop.MVC
                 }
             );
 
-            services.AddHttpContextAccessor();
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -79,6 +94,13 @@ namespace MovieShop.MVC
             app.UseStaticFiles();
 
             app.UseRouting();
+
+            //If the app uses authentication / authorization features such as AuthorizePage or[Authorize],
+            //place the call to UseAuthentication and UseAuthorization after UseRouting(and after UseCors if CORS Middleware is used).
+
+            //The trick (which is not mentioned in the migration guide) appears to be that
+            //UseAuthenticationUseAuthorization needs to be AFTER UseRouting but BEFORE UseEndpoints.
+
 
             app.UseAuthentication();
             app.UseAuthorization();

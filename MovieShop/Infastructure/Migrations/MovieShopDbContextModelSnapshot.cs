@@ -237,14 +237,14 @@ namespace Infrastructure.Migrations
                     b.Property<int>("MovieId")
                         .HasColumnType("int");
 
-                    b.Property<DateTime>("PurchaseDateTime")
+                    b.Property<DateTime?>("PurchaseDateTime")
                         .HasColumnType("datetime2");
 
-                    b.Property<Guid>("PurchaseNumber")
+                    b.Property<Guid?>("PurchaseNumber")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<decimal>("TotalPrice")
+                    b.Property<decimal?>("TotalPrice")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("decimal(18,2)")
                         .HasDefaultValue(9.9m);
@@ -275,7 +275,7 @@ namespace Infrastructure.Migrations
                         .HasColumnType("datetime2")
                         .HasDefaultValueSql("getdate()");
 
-                    b.Property<decimal>("Rating")
+                    b.Property<decimal?>("Rating")
                         .HasColumnType("decimal(3,2)");
 
                     b.Property<string>("ReviewText")

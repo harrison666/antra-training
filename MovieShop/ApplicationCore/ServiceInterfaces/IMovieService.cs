@@ -1,4 +1,5 @@
-﻿using ApplicationCore.Models.Response;
+﻿using ApplicationCore.Models.Request;
+using ApplicationCore.Models.Response;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,9 +15,11 @@ namespace ApplicationCore.ServiceInterfaces
         Task<List<MovieResponseModel>> GetTop30RevenueMovies();
         Task<List<MovieResponseModel>> GetTop30RatedMovies();
         Task<List<MovieResponseModel>> GetMoviesByGenre(int genreId);
-        Task<List<ReviewResponseModel>> GetReviewsForMovie(int Id);
+        Task<List<ReviewMovieResponseModel>> GetReviewsForMovie(int Id);
         Task<MovieDetailsResponseModel> GetMovieAsync(int id);
-
+        Task<MovieDetailsResponseModel> CreateMovie(MovieCreateRequestModel movieCreateRequest);
+        Task<MovieDetailsResponseModel> UpdateMovie(MovieCreateRequestModel movieCreateRequest);
+        Task<List<PurchaseResponseModel>> GetAllMoviePurchases();
 
     }
 }

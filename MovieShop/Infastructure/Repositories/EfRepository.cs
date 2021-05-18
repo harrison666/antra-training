@@ -38,7 +38,9 @@ namespace Infrastructure.Repositories
 
         public virtual async Task<int> GetCountAsync(Expression<Func<T, bool>> filter = null)
         {
-            return await _dbContext.Set<T>().Where(filter).CountAsync();
+            if (filter != null)
+                return await _dbContext.Set<T>().Where(filter).CountAsync();
+            return await _dbContext.Set<T>().CountAsync();
         }
 
         public virtual async Task<bool> GetExistsAsync(Expression<Func<T, bool>> filter = null)
@@ -77,6 +79,18 @@ namespace Infrastructure.Repositories
         {
             _dbContext.Set<T>().Remove(entity);
             await _dbContext.SaveChangesAsync();
+        }
+
+        public async Task<IEnumerable<T>> ListAllWithIncludesAsync(Expression<Func<T, bool>> @where,
+            params Expression<Func<T, object>>[] includes)
+        {
+            var query = _dbContext.Set<T>().AsQueryable();
+
+            if (includes != null)
+                foreach (Expression<Func<T, object>> navigationProperty in includes)
+                    query = query.Include(navigationProperty);
+
+            return await query.Where(@where).ToListAsync();
         }
     }
 }

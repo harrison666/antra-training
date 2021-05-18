@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using ApplicationCore.Entities;
 using ApplicationCore.Exceptions;
+using ApplicationCore.Models.Request;
 using ApplicationCore.Models.Response;
 using ApplicationCore.RepositoryInterfaces;
 using ApplicationCore.ServiceInterfaces;
@@ -15,12 +17,22 @@ namespace Infrastructure.Services
 
     public class MovieService : IMovieService
     {
+        private readonly IAsyncRepository<Favorite> _favoriteRepository;
+        private readonly IAsyncRepository<Genre> _genreRepository;
         private readonly IMovieRepository _movieRepository;
-        private readonly IMapper _mapper;
+        private readonly IPurchaseRepository _purchaseRepository;
+        private readonly IAsyncRepository<Review> _reviewRepository;
 
-        public MovieService(IMovieRepository movieRepository)
+
+        public MovieService(IMovieRepository movieRepository, IPurchaseRepository purchaseRepository,
+            IAsyncRepository<Favorite> favoriteRepository, IAsyncRepository<Review> reviewRepository,
+            IAsyncRepository<Genre> genreRepository)
         {
             _movieRepository = movieRepository;
+            _purchaseRepository = purchaseRepository;
+            _favoriteRepository = favoriteRepository;
+            _reviewRepository = reviewRepository;
+            _genreRepository = genreRepository;
         }
 
         public async Task<List<MovieResponseModel>> GetTop30RevenueMovies()
@@ -70,7 +82,9 @@ namespace Infrastructure.Services
                 {
                     Id = movie.Id,
                     Rating = movie.Rating,
-                    Title = movie.Title
+                    Title = movie.Title,
+                    PosterUrl = movie.PosterUrl,
+                    Budget = movie.Budget,
                 });
             }
 
@@ -108,14 +122,14 @@ namespace Infrastructure.Services
             return selectedMovies;
         }
 
-        public async Task<List<ReviewResponseModel>> GetReviewsForMovie(int id)
+        public async Task<List<ReviewMovieResponseModel>> GetReviewsForMovie(int id)
         {
             var reviews = await _movieRepository.GetReviewsByMovieId(id);
 
-            var selectedReviews = new List<ReviewResponseModel>();
+            var selectedReviews = new List<ReviewMovieResponseModel>();
             foreach (var review in reviews)
             {
-                selectedReviews.Add(new ReviewResponseModel
+                selectedReviews.Add(new ReviewMovieResponseModel
                 {
                     MovieId = review.MovieId,
                     UserId = review.UserId,
@@ -176,6 +190,133 @@ namespace Infrastructure.Services
                 Genres = genres
     };
             return response;
+        }
+
+        public async Task<MovieDetailsResponseModel> CreateMovie(MovieCreateRequestModel movieCreateRequestModel)
+        {
+            //check whether the user is Admin and can create the movie claim
+            var movie = new Movie()
+            {
+                Title = movieCreateRequestModel.Title,
+                Overview = movieCreateRequestModel.Overview,
+                Tagline = movieCreateRequestModel.Tagline,
+                Revenue = movieCreateRequestModel.Revenue,
+                Budget = movieCreateRequestModel.Budget,
+                ImdbUrl = movieCreateRequestModel.ImdbUrl,
+                TmdbUrl = movieCreateRequestModel.TmdbUrl,
+                PosterUrl = movieCreateRequestModel.PosterUrl,
+                BackdropUrl = movieCreateRequestModel.BackdropUrl,
+                OriginalLanguage = movieCreateRequestModel.OriginalLanguage,
+                ReleaseDate = movieCreateRequestModel.ReleaseDate,
+                RunTime = movieCreateRequestModel.RunTime,
+                Price = movieCreateRequestModel.Price,
+                Genres = new List<Genre>()
+            };
+            foreach (var genre in movieCreateRequestModel.Genres)
+            {
+                movie.Genres.Add(new Genre()
+                {
+                    Id = genre.Id,
+                    Name = genre.Name,
+                });
+            }
+
+            var newMovie = await _movieRepository.AddAsync(movie);
+            var moiveResponse = new MovieDetailsResponseModel()
+            {
+                Id = newMovie.Id,
+                Title = newMovie.Title,
+                Budget = newMovie.Budget,
+                PosterUrl = newMovie.PosterUrl,
+                Rating = newMovie.Rating,
+                ReleaseDate = newMovie.ReleaseDate,
+                BackdropUrl = newMovie.BackdropUrl,
+                ImdbUrl = newMovie.ImdbUrl,
+                Tagline = newMovie.Tagline,
+                Price = newMovie.Price,
+                Revenue = newMovie.Revenue,
+                RunTime = newMovie.RunTime,
+                Overview = newMovie.Overview,
+                TmdbUrl = newMovie.TmdbUrl,
+
+            };
+            return moiveResponse;
+            
+            
+        }
+
+        public async Task<MovieDetailsResponseModel> UpdateMovie(MovieCreateRequestModel movieCreateRequestModel)
+        {
+            var movie = new Movie()
+            {
+                Id = movieCreateRequestModel.Id,
+                Title = movieCreateRequestModel.Title,
+                Overview = movieCreateRequestModel.Overview,
+                Tagline = movieCreateRequestModel.Tagline,
+                Revenue = movieCreateRequestModel.Revenue,
+                Budget = movieCreateRequestModel.Budget,
+                ImdbUrl = movieCreateRequestModel.ImdbUrl,
+                TmdbUrl = movieCreateRequestModel.TmdbUrl,
+                PosterUrl = movieCreateRequestModel.PosterUrl,
+                BackdropUrl = movieCreateRequestModel.BackdropUrl,
+                OriginalLanguage = movieCreateRequestModel.OriginalLanguage,
+                ReleaseDate = movieCreateRequestModel.ReleaseDate,
+                RunTime = movieCreateRequestModel.RunTime,
+                Price = movieCreateRequestModel.Price,
+                Genres = new List<Genre>()
+            };
+            foreach (var genre in movieCreateRequestModel.Genres)
+            {
+                movie.Genres.Add(new Genre()
+                {
+                    Id = genre.Id,
+                    Name = genre.Name,
+                });
+            }
+
+            var newMovie = await _movieRepository.UpdateAsync(movie);
+            var moiveResponse = new MovieDetailsResponseModel()
+            {
+                Id = newMovie.Id,
+                Title = newMovie.Title,
+                Budget = newMovie.Budget,
+                PosterUrl = newMovie.PosterUrl,
+                Rating = newMovie.Rating,
+                ReleaseDate = newMovie.ReleaseDate,
+                BackdropUrl = newMovie.BackdropUrl,
+                ImdbUrl = newMovie.ImdbUrl,
+                Tagline = newMovie.Tagline,
+                Price = newMovie.Price,
+                Revenue = newMovie.Revenue,
+                RunTime = newMovie.RunTime,
+                Overview = newMovie.Overview,
+                TmdbUrl = newMovie.TmdbUrl,
+
+            };
+            return moiveResponse;
+        }
+
+        public async Task<List<PurchaseResponseModel>> GetAllMoviePurchases()
+        {
+            var purchases = await _purchaseRepository.GetAllPurchases();
+
+            var purchaseResponse = new List<PurchaseResponseModel>();
+            foreach (var purchase in purchases)
+            {
+                purchaseResponse.Add(new PurchaseResponseModel()
+                {
+                    UserId = purchase.UserId,
+                    PurchaseDateTime = purchase.PurchaseDateTime,
+                    MovieId = purchase.MovieId,
+                    PurchaseNumber = purchase.PurchaseNumber,
+                    TotalPrice = purchase.TotalPrice,
+                    Id = purchase.Id,
+                    Customer = purchase.Customer,
+                    Movie = purchase.Movie,
+                });
+            }
+
+            return purchaseResponse;
         }
     }
 }

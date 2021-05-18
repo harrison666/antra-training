@@ -120,3 +120,11 @@ E:\1_Study\9_CS\15_Antra\HW\MovieShop\MovieShop.API\obj\Debug\net5.0\MovieShop.A
 E:\1_Study\9_CS\15_Antra\HW\MovieShop\MovieShop.API\obj\Debug\net5.0\ref\MovieShop.API.dll
 E:\1_Study\9_CS\15_Antra\HW\MovieShop\MovieShop.API\obj\Debug\net5.0\MovieShop.API.pdb
 E:\1_Study\9_CS\15_Antra\HW\MovieShop\MovieShop.API\obj\Debug\net5.0\MovieShop.API.genruntimeconfig.cache
+E:\1_Study\9_CS\15_Antra\HW\MovieShop\MovieShop.API\bin\Debug\net5.0\AutoMapper.dll
+E:\1_Study\9_CS\15_Antra\HW\MovieShop\MovieShop.API\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+E:\1_Study\9_CS\15_Antra\HW\MovieShop\MovieShop.API\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+E:\1_Study\9_CS\15_Antra\HW\MovieShop\MovieShop.API\bin\Debug\net5.0\ApplicationCore.dll
+E:\1_Study\9_CS\15_Antra\HW\MovieShop\MovieShop.API\bin\Debug\net5.0\Infrastructure.dll
+E:\1_Study\9_CS\15_Antra\HW\MovieShop\MovieShop.API\bin\Debug\net5.0\ApplicationCore.pdb
+E:\1_Study\9_CS\15_Antra\HW\MovieShop\MovieShop.API\bin\Debug\net5.0\Infrastructure.pdb
+E:\1_Study\9_CS\15_Antra\HW\MovieShop\MovieShop.API\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

@@ -27,8 +27,20 @@ namespace Infrastructure.Repositories
         
         public async Task<IEnumerable<Movie>> GetTop30HighestRatedMovies()
         {
-            var movies = await _dbContext.Movies.OrderByDescending(m => m.Rating).Take(30).ToListAsync();
-            return movies;
+            //var movies = await _dbContext.Movies.OrderByDescending(m => m.Rating).Take(30).ToListAsync();
+            var movies = await _dbContext.Movies.ToListAsync();
+            foreach (var movie in movies)
+            {
+                var id = movie.Id;
+                movie.Rating = await _dbContext.Reviews.Where(r => r.MovieId == id).DefaultIfEmpty()
+                .AverageAsync(r => r == null ? 0 : r.Rating);
+            }
+            //var rating = await _dbContext.Reviews.Include(r => r.Movie).GroupBy(r => new { r.MovieId, r.Movie })
+            //    .Select(g => new { AverageRating = g.Average(p => p.Rating), Movie = g.Key.Movie })
+            //    .OrderByDescending(r => r.AverageRating).Take(30).ToListAsync();
+            var topMovies = movies.OrderByDescending(m => m.Rating).Take(30).ToList();
+
+            return topMovies;
         }
 
         public override async Task<Movie> GetByIdAsync(int id)
