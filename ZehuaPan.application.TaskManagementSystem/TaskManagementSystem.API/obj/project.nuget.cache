@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "KEk9qp7SAZIsYiGoB1U/t71lO72fNHhq2TAiYZHPCQrmp7iYtMuF2cH+KAyc5E6LVF42pXmEZYj32KJUioERFw==",
+  "success": true,
+  "projectFilePath": "E:\\1_Study\\9_CS\\15_Antra\\HW\\ZehuaPan.application.TaskManagementSystem\\TaskManagementSystem.API\\TaskManagementSystem.API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Harrison\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\Harrison\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Harrison\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "C:\\Users\\Harrison\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "C:\\Users\\Harrison\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "C:\\Users\\Harrison\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+  ],
+  "logs": []
+}
