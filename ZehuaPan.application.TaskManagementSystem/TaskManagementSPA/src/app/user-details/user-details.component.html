@@ -1,0 +1,60 @@
+<div>
+    <div>
+        <h3>
+            {{user?.fullname}}
+        </h3>
+        <ul>
+            <li>
+                Email: {{user?.email}}
+            </li>
+            <li>
+                Mobile Number: {{user?.mobileno}}
+            </li>
+        </ul>
+    </div>
+
+    <div>
+        <h3>
+            Tasks To-do
+        </h3>
+        <button type="button" class="btn btn-primary" [routerLink]="['/task/add/' + user?.id ]">Add</button>
+        <ul>
+            <li *ngFor="let task of user?.tasks">
+                <h3>
+                    {{task?.title}}
+                </h3>
+                <button type="button" class="btn btn-warning" [routerLink]="['/task/edit/' + user?.id  + '/' + task.id]">Edit</button>
+                <button type="button" class="btn btn-danger" (click)="deleteTask(task.id)">Delete</button>
+                <button type="button" class="btn btn-success" (click)="finishTask(task)">Finish</button>
+                <ul>
+                    <li>Description: {{task?.description}}</li>
+                    <li>Due Date: {{task?.dueDate}}</li>
+                    <li>Priority: {{task?.priority}}</li>
+                    <li>Remarks: {{task?.remarks}}</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div>
+        <h3>
+            Tasks History
+        </h3>
+        <button type="button" class="btn btn-primary" [routerLink]="['/taskHistory/add/' + user?.id ]">Add</button>
+        <ul>
+            <li *ngFor="let task of user?.taskHistories">
+                <h3>
+                    {{task?.title}}
+                </h3>
+                <button type="button" class="btn btn-warning" [routerLink]="['/taskHistory/edit/' + user?.id  + '/' + task.taskId]">Edit</button>
+                <button type="button" class="btn btn-danger" (click)="deleteTaskHistory(task.taskId)">Delete</button>
+                <ul>
+                    <li>Description: {{task?.description}}</li>
+                    <li>Due Date: {{task?.dueDate}}</li>
+                    <li>Completed Date: {{task?.completed}}</li>
+                    <li>Remarks: {{task?.remarks}}</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>

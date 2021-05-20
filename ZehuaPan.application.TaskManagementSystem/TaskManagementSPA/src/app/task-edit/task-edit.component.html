@@ -1,0 +1,57 @@
+<div class="container">
+    <h1>Add A Task</h1>
+      <form (ngSubmit)="editTask()">
+        <div class="form-group">
+          <label for="title">Title</label>
+          <input
+            type="title"
+            class="form-control"
+            id="title"
+            name="title"
+            [(ngModel)]="task.title"
+          />
+        </div>
+        <div class="form-group">
+          <label for="description">Description</label>
+          <input
+            type="description"
+            class="form-control"
+            id="description"
+            name="description"
+            [(ngModel)]="task.description"
+          />
+        </div>
+        <div class="form-group">
+            <label for="dueDate">Due Date</label>
+            <input
+              type="date"
+              class="form-control"
+              id="dueDate"
+              name="dueDate"
+              [(ngModel)]="task.dueDate"
+            />
+          </div>
+          <div class="form-group">
+            <label for="priority">Priority</label>
+            <input
+              type="priority"
+              class="form-control"
+              id="priority"
+              name="priority"
+              [(ngModel)]="task.priority"
+            />
+          </div>
+          <div class="form-group">
+            <label for="remarks">Remarks</label>
+            <input
+              type="remarks"
+              class="form-control"
+              id="remarks"
+              name="prioremarksrity"
+              [(ngModel)]="task.remarks"
+            />
+          </div>
+    
+        <input type="submit" class="btn btn-primary" value="submit" />
+      </form>
+    </div>

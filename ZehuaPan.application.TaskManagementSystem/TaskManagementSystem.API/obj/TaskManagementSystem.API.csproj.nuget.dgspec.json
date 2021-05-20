@@ -4,14 +4,14 @@
     "E:\\1_Study\\9_CS\\15_Antra\\HW\\ZehuaPan.application.TaskManagementSystem\\TaskManagementSystem.API\\TaskManagementSystem.API.csproj": {}
   },
   "projects": {
-    "E:\\1_Study\\9_CS\\15_Antra\\HW\\ZehuaPan.application.TaskManagementSystem\\TaskManagementSystem.API\\TaskManagementSystem.API.csproj": {
+    "E:\\1_Study\\9_CS\\15_Antra\\HW\\ZehuaPan.application.TaskManagementSystem\\ApplicationCore\\ApplicationCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\1_Study\\9_CS\\15_Antra\\HW\\ZehuaPan.application.TaskManagementSystem\\TaskManagementSystem.API\\TaskManagementSystem.API.csproj",
-        "projectName": "TaskManagementSystem.API",
-        "projectPath": "E:\\1_Study\\9_CS\\15_Antra\\HW\\ZehuaPan.application.TaskManagementSystem\\TaskManagementSystem.API\\TaskManagementSystem.API.csproj",
+        "projectUniqueName": "E:\\1_Study\\9_CS\\15_Antra\\HW\\ZehuaPan.application.TaskManagementSystem\\ApplicationCore\\ApplicationCore.csproj",
+        "projectName": "ApplicationCore",
+        "projectPath": "E:\\1_Study\\9_CS\\15_Antra\\HW\\ZehuaPan.application.TaskManagementSystem\\ApplicationCore\\ApplicationCore.csproj",
         "packagesPath": "C:\\Users\\Harrison\\.nuget\\packages\\",
-        "outputPath": "E:\\1_Study\\9_CS\\15_Antra\\HW\\ZehuaPan.application.TaskManagementSystem\\TaskManagementSystem.API\\obj\\",
+        "outputPath": "E:\\1_Study\\9_CS\\15_Antra\\HW\\ZehuaPan.application.TaskManagementSystem\\ApplicationCore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Harrison\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,167 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\1_Study\\9_CS\\15_Antra\\HW\\ZehuaPan.application.TaskManagementSystem\\Infrastructure\\Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\1_Study\\9_CS\\15_Antra\\HW\\ZehuaPan.application.TaskManagementSystem\\Infrastructure\\Infrastructure.csproj",
+        "projectName": "Infrastructure",
+        "projectPath": "E:\\1_Study\\9_CS\\15_Antra\\HW\\ZehuaPan.application.TaskManagementSystem\\Infrastructure\\Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Harrison\\.nuget\\packages\\",
+        "outputPath": "E:\\1_Study\\9_CS\\15_Antra\\HW\\ZehuaPan.application.TaskManagementSystem\\Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Harrison\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "E:\\1_Study\\9_CS\\15_Antra\\HW\\ZehuaPan.application.TaskManagementSystem\\ApplicationCore\\ApplicationCore.csproj": {
+                "projectPath": "E:\\1_Study\\9_CS\\15_Antra\\HW\\ZehuaPan.application.TaskManagementSystem\\ApplicationCore\\ApplicationCore.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\1_Study\\9_CS\\15_Antra\\HW\\ZehuaPan.application.TaskManagementSystem\\TaskManagementSystem.API\\TaskManagementSystem.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\1_Study\\9_CS\\15_Antra\\HW\\ZehuaPan.application.TaskManagementSystem\\TaskManagementSystem.API\\TaskManagementSystem.API.csproj",
+        "projectName": "TaskManagementSystem.API",
+        "projectPath": "E:\\1_Study\\9_CS\\15_Antra\\HW\\ZehuaPan.application.TaskManagementSystem\\TaskManagementSystem.API\\TaskManagementSystem.API.csproj",
+        "packagesPath": "C:\\Users\\Harrison\\.nuget\\packages\\",
+        "outputPath": "E:\\1_Study\\9_CS\\15_Antra\\HW\\ZehuaPan.application.TaskManagementSystem\\TaskManagementSystem.API\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Harrison\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "E:\\1_Study\\9_CS\\15_Antra\\HW\\ZehuaPan.application.TaskManagementSystem\\ApplicationCore\\ApplicationCore.csproj": {
+                "projectPath": "E:\\1_Study\\9_CS\\15_Antra\\HW\\ZehuaPan.application.TaskManagementSystem\\ApplicationCore\\ApplicationCore.csproj"
+              },
+              "E:\\1_Study\\9_CS\\15_Antra\\HW\\ZehuaPan.application.TaskManagementSystem\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "E:\\1_Study\\9_CS\\15_Antra\\HW\\ZehuaPan.application.TaskManagementSystem\\Infrastructure\\Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.6, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.6.3, )"

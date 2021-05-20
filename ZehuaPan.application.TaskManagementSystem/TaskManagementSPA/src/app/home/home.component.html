@@ -1,0 +1,11 @@
+
+<h1>
+    Registered Users
+</h1>
+<ul>
+    <li *ngFor="let user of users;let i = index;">
+      <a [routerLink]="['user/', user.id]"> {{ user.fullname }} </a>
+      <button type="button" class="btn btn-warning" [routerLink]="['user/update', user.id]">Update</button>
+      <button type="button" class="btn btn-danger" (click)="delete(user.id)">Delete</button>
+    </li>
+  </ul>

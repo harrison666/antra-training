@@ -1,7 +1,14 @@
+using ApplicationCore.Entities;
+using ApplicationCore.RepositoryInterface;
+using ApplicationCore.ServiceInterface;
+using Infrastructure.Data;
+using Infrastructure.Repositories;
+using Infrastructure.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -28,6 +35,20 @@ namespace TaskManagementSystem.API
         {
 
             services.AddControllers();
+
+            services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<IUserService, UserService>();
+
+            services.AddScoped<ITaskRepository, TaskRepository>();
+            services.AddScoped<ITaskService, TaskService>();
+
+            services.AddScoped<ITaskHistoryRepository, TaskHistoryRepository>();
+            services.AddScoped<ITaskHistoryService, TaskHistoryService>();
+
+            services.AddDbContext<TaskManagementSystemDbContext>(options => options.UseSqlServer(
+                Configuration.GetConnectionString("TaskManagementSystemDbConnection")
+                ));
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "TaskManagementSystem.API", Version = "v1" });
@@ -43,6 +64,12 @@ namespace TaskManagementSystem.API
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "TaskManagementSystem.API v1"));
             }
+
+            app.UseCors(builder =>
+            {
+                builder.WithOrigins(Configuration.GetValue<string>("clientSPAUrl")).AllowAnyHeader()
+                    .AllowAnyMethod();
+            });
 
             app.UseHttpsRedirection();
 
